@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router';
+
 function Navbar(){
     return (
         <header>
@@ -8,12 +10,12 @@ function Navbar(){
 
                 <div className="navbar__navigation">
                     <ul className="navbar__links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/shop">Shop</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/login">Login</a></li>
-                        <li><a href="/cart">Cart</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/shop">Shop</NavLink></li>
+                        <li><NavLink to="/about">About</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><NavLink to="/login">Login</NavLink></li>
+                        <li><NavLink to="/cart">Cart</NavLink></li>
                     </ul>
                 </div>
             </nav>
