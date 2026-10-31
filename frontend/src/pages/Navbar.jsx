@@ -1,21 +1,38 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router';
+import './Navbar.css';
 
-function Navbar(){
+function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    let navigationClass = "navbar__navigation";
+
+    if (menuOpen) {
+        navigationClass = "navbar__navigation navbar__navigation--open";
+    }
+
     return (
         <header>
             <nav className="navbar">
                 <div className="navbar__brand">
-                    <a href="/">Shop Demo</a>
+                    <button
+                        className="navbar__toggle"
+                        type="button"
+                        aria-label="Toggle navigation"
+                        aria-expanded={menuOpen}
+                        aria-controls="primary-navigation"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >☰</button>
+                    <NavLink to="/" onClick={() => setMenuOpen(false)}>Shop Demo</NavLink>
                 </div>
 
-                <div className="navbar__navigation">
+                <div id="primary-navigation" className={navigationClass}>
                     <ul className="navbar__links">
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/shop">Shop</NavLink></li>
-                        <li><NavLink to="/about">About</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
-                        <li><NavLink to="/login">Login</NavLink></li>
-                        <li><NavLink to="/cart">Cart</NavLink></li>
+                        <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+                        <li><NavLink to="/shop" onClick={() => setMenuOpen(false)}>Shop</NavLink></li>
+                        <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
+                        <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
+                        <li><NavLink to="/login" onClick={() => setMenuOpen(false)}>Login</NavLink></li>
+                        <li><NavLink to="/cart" onClick={() => setMenuOpen(false)}>🛒</NavLink></li>
                     </ul>
                 </div>
             </nav>
