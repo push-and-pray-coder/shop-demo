@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import {Routes, Route} from 'react-router'
 import Navbar from './pages/navbar'
+import Home from './pages/Home';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
     <Navbar/>
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/shop" element={<h1>Shop Page</h1>} />
         <Route path="/about" element={<h1>About Page</h1>} />
         <Route path="/contact" element={<h1>Contact Page</h1>} />
