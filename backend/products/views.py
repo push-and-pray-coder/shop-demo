@@ -6,5 +6,15 @@ def product_list(request):
     return JsonResponse(list(products), safe=False)
 
 def category_list(request):
-    categories = Category.objects.values("id", "name")
-    return JsonResponse(list(categories), safe=False)
+    categories = Category.objects.all()
+
+    data = [
+        {
+            "id" : category.id,
+            "name" : category.name,
+            "image" : category.image.url if category.image else None,
+        }
+        for category in categories
+    ]
+
+    return JsonResponse(data, safe=False)
