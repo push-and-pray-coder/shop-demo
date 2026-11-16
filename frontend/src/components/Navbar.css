@@ -11,8 +11,6 @@
     background-color: var(--color-background);
 }
 
-
-
 .navbar__navigation--open {
     display: block;
 }
@@ -44,6 +42,19 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.navbar__logout {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #1e293b;
+    font: inherit;
+    cursor: pointer;
+}
+
+.navbar__logout:hover {
+    color: #2563eb;
 }
 
 @media (max-width: 768px) {

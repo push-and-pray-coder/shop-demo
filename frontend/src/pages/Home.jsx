@@ -1,5 +1,5 @@
-import Hero from './Hero'
-import CategoryGrid from './CategoryGrid';
+import Hero from '../components/Hero'
+import CategoryGrid from '../components/CategoryGrid';
 function Home() {
     return (
         <main>

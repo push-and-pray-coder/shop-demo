@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import './CategoryGrid.css';
+import { API_URL } from '../api.js';
 
 function CategoryGrid(){
     const [categories, setCategories] = useState([])
     
     useEffect(() => {
-        fetch('/api/categories/')
+        fetch(`${API_URL}/api/categories/`)
             .then(response => response.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error));

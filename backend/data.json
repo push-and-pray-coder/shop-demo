@@ -1,0 +1,810 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$ubHyXKlqNavDY7Pg4c2Pkp$1WP824BLQNtTnNXdy2qwatkHUyadtJmROxfNLZG26so=",
+    "last_login": "2026-11-03T00:47:22.406Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-01T19:44:38.695Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$X7LbNulK9MDort5D4iQxfG$HHfngJtdIe/lQHxpMDcPv7aIzjMpowAcvAMUntEKM5I=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-11-10T16:19:28.629Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$KEZjxG8qKokOnDqDlulaa1$zlKq9nV3NqywhN2cJMlm4cVQqfcERxFFB0AzZv5VoD8=",
+    "last_login": "2026-11-14T18:34:36.086Z",
+    "is_superuser": false,
+    "username": "user",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-11-10T16:29:46.394Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4djx3iev53d4e5537a0awyc6sjzeun09",
+  "fields": {
+    "session_data": ".eJxVjMsKwjAQAP9lzxKS0ObRo3e_Iexms6YqKTTtSfx3KfSg15lh3pBw32rae1nTzDCBgcsvI8zP0g7BD2z3ReWlbetM6kjUabu6LVxe17P9G1TsFSawJD5icWjQRq3NQNa5EkcpxEZ85iBZW42ayVkbxIeBIrJDMyJKMPD5AvZsOII:1xO2gM:q-TgoSy6IP6GoUFxwXWdUxo4sJBTi07NsDroHRE4wW0",
+    "expire_date": "2026-11-17T00:47:22.430Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4waqo5zu1k9jr1qbdr6zxblfm5jvipti",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0OgILA9eu8byLKAVA1NSnsy_t006UGvM5N5Q6B9q2HveQ1zghE0XH5ZJH7mdoj0oHZfBC9tW-cojkSctotpSfl1O9u_QaVeYQS02RfjSEapSkkeGcmRRLpGO7DUnrLhqKNh8oWtLKjQoWPkgbPCAT5f_JU4dQ:1xSIaC:qVHaUAx0ZYJtn-MgyDZZ7XBK00pcC0juDbxGHEZIiGA",
+    "expire_date": "2026-11-28T18:34:36.100Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bt6d3x0nauquutiz9v6diubxx2z8gu0b",
+  "fields": {
+    "session_data": ".eJxVjMsKwjAQAP9lzxKS0ObRo3e_Iexms6YqKTTtSfx3KfSg15lh3pBw32rae1nTzDCBgcsvI8zP0g7BD2z3ReWlbetM6kjUabu6LVxe17P9G1TsFSawJD5icWjQRq3NQNa5EkcpxEZ85iBZW42ayVkbxIeBIrJDMyJKMPD5AvZsOII:1xNbUI:fqi_juSE_MACk9YER2_6a3gza7oej7QHqwKI0pvK9gI",
+    "expire_date": "2026-11-15T19:45:06.996Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "Electronics",
+    "image": "categories/electronics.png"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "Clothing",
+    "image": "categories/clothing.png"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "Footwear",
+    "image": "categories/footwear.png"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "Software",
+    "image": "categories/software.png"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Wireless Mouse",
+    "price": "29.99",
+    "category": 1,
+    "image": "products/wire-less-mouse.png",
+    "description": "USB blue tooth enabled mouse."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Keyboard",
+    "price": "40.00",
+    "category": 1,
+    "image": "products/keyboard.png",
+    "description": "Full-size keyboard featuring responsive keys, a numeric keypad, and blue LED backlighting."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Monitor",
+    "price": "200.00",
+    "category": 1,
+    "image": "products/monitor.png",
+    "description": "32\" 4K monitor."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Desktop PC",
+    "price": "1500.00",
+    "category": 1,
+    "image": "products/desktop.png",
+    "description": "Modern desktop PC."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "T-Shirt",
+    "price": "10.99",
+    "category": 2,
+    "image": "products/t-shirt.png",
+    "description": "Classic white crew-neck T-shirt made from soft, breathable cotton for everyday comfort."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Black Pants",
+    "price": "40.00",
+    "category": 2,
+    "image": "products/pants.png",
+    "description": "Slim-fit black trousers featuring a modern tapered design, durable fabric, and practical pockets."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Denim Jacket",
+    "price": "59.99",
+    "category": 2,
+    "image": "products/jean-jacket.png",
+    "description": "Casual blue denim jacket featuring a button-up front, chest pockets, and classic stitching."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "White Sneakers",
+    "price": "70.99",
+    "category": 3,
+    "image": "products/tennis-shoe.png",
+    "description": "Versatile white low-top sneakers with cushioned insoles, breathable lining, and durable rubber soles."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Black Boots",
+    "price": "125.00",
+    "category": 3,
+    "image": "products/botos.png",
+    "description": "Rugged black leather ankle boots featuring lace-up closures, reinforced stitching, and slip-resistant soles."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Brown Loafers",
+    "price": "90.00",
+    "category": 3,
+    "image": "products/loafers.png",
+    "description": "Comfortable brown suede-style loafers with slip-on construction and classic moc-toe stitching."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "Photo Editor",
+    "price": "100.00",
+    "category": 4,
+    "image": "products/phot-editor.png",
+    "description": "Photo editing software featuring image enhancement, color adjustments, filters, and creative editing tools."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "Task Flow",
+    "price": "110.00",
+    "category": 4,
+    "image": "products/taskflow.png",
+    "description": "Productivity software for organizing tasks, managing projects, tracking deadlines, and monitoring progress."
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "Analytics Dashboard",
+    "price": "150.00",
+    "category": 4,
+    "image": "products/dashboard.png",
+    "description": "Business analytics software featuring interactive charts, performance metrics, sales tracking, and reporting tools."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-11-01T19:46:24.970Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Electronics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-11-01T19:48:43.037Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Wireless Mouse",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-11-02T04:34:32.078Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "Clothing",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-11-02T04:34:36.333Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Footwear",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-11-02T04:34:43.196Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Software",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-11-03T00:48:32.328Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "Clothing",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-11-03T01:51:37.083Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Software",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-11-03T01:51:42.608Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Footwear",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-11-03T01:51:48.203Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Electronics",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-11-06T01:28:57.911Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Software",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-11-06T01:29:04.010Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Footwear",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-11-06T01:29:09.312Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Electronics",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-11-06T01:31:03.612Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Software",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-11-06T02:42:49.147Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Wireless Mouse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-11-06T03:04:11.659Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Keyboard",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-11-06T03:04:48.898Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Keyboard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-11-06T03:05:37.861Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "Monitor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-11-06T03:09:49.538Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Desktop PC",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-11-07T18:40:13.058Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Keyboard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-11-07T18:40:33.013Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Desktop PC",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-11-07T18:40:50.466Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "Monitor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-11-07T18:41:05.648Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Wireless Mouse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-11-13T02:51:15.405Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "T-Shirt",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-11-13T02:51:40.672Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "6",
+    "object_repr": "Black Pants",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-11-13T02:52:02.969Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "7",
+    "object_repr": "Denim Jacket",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-11-13T02:52:30.117Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "8",
+    "object_repr": "White Sneakers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-11-13T02:52:57.226Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "9",
+    "object_repr": "Black Boots",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-11-13T02:53:20.414Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "10",
+    "object_repr": "Brown Loafers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-11-13T02:53:41.323Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "11",
+    "object_repr": "Photo Editor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-11-13T02:54:00.532Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "12",
+    "object_repr": "Task Flow",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-11-13T02:54:29.967Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "13",
+    "object_repr": "Analytics Dashboard",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
