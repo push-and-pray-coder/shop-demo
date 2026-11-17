@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { getCsrfToken } from '../utils/csrf';
 import { useAuth } from '../context/AuthContext';
 import { API_URL } from '../api.js';
+import { Link } from 'react-router';
+import './Auth.css';
 
 export default function Login() {
     const [username, setUsername] = useState('');
@@ -45,7 +47,7 @@ export default function Login() {
     };
 
     return (
-        <main>
+        <main className="login">
             <h1>Login</h1>
 
             <form onSubmit={handleSubmit}>
@@ -71,7 +73,11 @@ export default function Login() {
                 <button type="submit">Login</button>
             </form>
 
-            <p role="status">{message}</p>
+            <p className="login__register">
+                Don't have an account? <Link to="/register">Register</Link>
+            </p>
+
+            <p className="login__message" role="status">{message}</p>
         </main>
     );
 }

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { getCsrfToken } from '../utils/csrf';
 import { API_URL } from '../api.js';
-
+import { Link } from 'react-router';
+import './Auth.css'
 
 export default function Register() {
     const [username, setUsername] = useState('');
@@ -40,7 +41,7 @@ export default function Register() {
     };
 
     return (
-        <main>
+        <main className="login">
             <h1>Create Account</h1>
 
             <form onSubmit={handleSubmit}>
@@ -64,7 +65,7 @@ export default function Register() {
                 <button type="submit">Register</button>
             </form>
 
-            <p role="status">{message}</p>
+            <p className="login__message" role="status">{message}</p>
         </main>
     );
 }
