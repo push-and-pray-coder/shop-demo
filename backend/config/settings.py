@@ -177,5 +177,5 @@ CSRF_TRUSTED_ORIGINS = [
     "https://shop-demo-frontend.onrender.com",
 ]
 
-SESSION_COOKIE_SAMESITE = "Lax"
-CSRF_COOKIE_SAMESITE = "Lax"
+SESSION_COOKIE_SAMESITE = "None" if not DEBUG else "Lax"
+CSRF_COOKIE_SAMESITE = "None" if not DEBUG else "Lax"
