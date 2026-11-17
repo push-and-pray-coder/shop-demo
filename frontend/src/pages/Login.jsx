@@ -47,37 +47,40 @@ export default function Login() {
     };
 
     return (
-        <main className="login">
-            <h1>Login</h1>
+        <main className="auth-page">
+            <div className="login">
 
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label>
-                <input
-                    id="username"
-                    value={username}
-                    onChange={(event) => setUsername(event.target.value)}
-                    autoComplete="username"
-                    required
-                />
+                <h1>Login</h1>
 
-                <label htmlFor="password">Password</label>
-                <input
-                    id="password"
-                    type="password"
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                    autoComplete="current-password"
-                    required
-                />
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        id="username"
+                        value={username}
+                        onChange={(event) => setUsername(event.target.value)}
+                        autoComplete="username"
+                        required
+                    />
 
-                <button type="submit">Login</button>
-            </form>
+                    <label htmlFor="password">Password</label>
+                    <input
+                        id="password"
+                        type="password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                        autoComplete="current-password"
+                        required
+                    />
 
-            <p className="login__register">
-                Don't have an account? <Link to="/register">Register</Link>
-            </p>
+                    <button type="submit">Login</button>
+                </form>
 
-            <p className="login__message" role="status">{message}</p>
+                <p className="login__register">
+                    Don't have an account? <Link to="/register">Register</Link>
+                </p>
+
+                <p className="login__message" role="status">{message}</p>
+            </div>
         </main>
     );
 }

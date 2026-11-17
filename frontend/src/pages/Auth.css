@@ -1,11 +1,19 @@
 .login {
-    max-width: 420px;
-    margin: 60px auto;
-    padding: 32px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+        max-width: 420px;
+        padding: 32px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.auth-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 16px;
 }
 
 .login h1 {

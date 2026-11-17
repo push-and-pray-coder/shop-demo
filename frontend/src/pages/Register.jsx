@@ -41,31 +41,34 @@ export default function Register() {
     };
 
     return (
-        <main className="login">
-            <h1>Create Account</h1>
+        <main className="auth-page">
+            <div className="login">
 
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label>
-                <input
-                    id="username"
-                    value={username}
-                    onChange={(event) => setUsername(event.target.value)}
-                    required
-                />
+                <h1>Create Account</h1>
 
-                <label htmlFor="password">Password</label>
-                <input
-                    id="password"
-                    type="password"
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                    required
-                />
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        id="username"
+                        value={username}
+                        onChange={(event) => setUsername(event.target.value)}
+                        required
+                    />
 
-                <button type="submit">Register</button>
-            </form>
+                    <label htmlFor="password">Password</label>
+                    <input
+                        id="password"
+                        type="password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                        required
+                    />
 
-            <p className="login__message" role="status">{message}</p>
+                    <button type="submit">Register</button>
+                </form>
+
+                <p className="login__message" role="status">{message}</p>
+            </div>
         </main>
     );
 }
