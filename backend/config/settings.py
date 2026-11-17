@@ -140,8 +140,8 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
 MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
+    "default": {
+        "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
     },
 }
 
@@ -164,6 +164,7 @@ STORAGES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://shop-demo-frontend.onrender.com",
 ]
 
 # Allow cookies to accompany cross-origin API requests.
@@ -173,4 +174,8 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://shop-demo-frontend.onrender.com",
 ]
+
+SESSION_COOKIE_SAMESITE = "Lax"
+CSRF_COOKIE_SAMESITE = "Lax"

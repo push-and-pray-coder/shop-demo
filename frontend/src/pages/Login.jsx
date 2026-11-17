@@ -14,21 +14,12 @@ export default function Login() {
         setMessage('');
 
         try {
-            // Obtain a CSRF cookie before submitting credentials.
-            const csrfResponse = await fetch(`${API_URL}/api/auth/csrf/`, {
-                credentials: 'include',
-            });
-
-            if (!csrfResponse.ok) {
-                throw new Error('Unable to initialize CSRF protection.');
-            }
-
             const response = await fetch(`${API_URL}/api/auth/login/`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-CSRFToken': getCsrfToken(),
+                    'X-CSRFToken': await getCsrfToken(),
                 },
                 body: JSON.stringify({ username, password }),
             });

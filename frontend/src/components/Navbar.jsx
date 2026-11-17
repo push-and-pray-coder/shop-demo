@@ -29,7 +29,7 @@ function Navbar() {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
-                    'X-CSRFToken': getCsrfToken(),
+                    'X-CSRFToken': await getCsrfToken(),
                 },
             });
 

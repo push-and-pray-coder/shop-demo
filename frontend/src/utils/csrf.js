@@ -1,9 +1,14 @@
-export function getCsrfToken() {
-    const cookie = document.cookie
-        .split('; ')
-        .find(row => row.startsWith('csrftoken='));
+import { API_URL } from '../api.js';
 
-    return cookie
-        ? decodeURIComponent(cookie.split('=')[1])
-        : null;
+export async function getCsrfToken() {
+    const response = await fetch(`${API_URL}/api/auth/csrf/`, {
+        credentials: 'include',
+    });
+
+    if (!response.ok) {
+        throw new Error('Unable to retrieve CSRF token.');
+    }
+
+    const data = await response.json();
+    return data.csrfToken;
 }

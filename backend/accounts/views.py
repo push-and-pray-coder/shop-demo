@@ -8,6 +8,7 @@ from django.core.exceptions import ValidationError
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_GET
 from django.contrib.auth import authenticate, login, logout
+from django.middleware.csrf import get_token
 
 @require_POST
 def register(request):
@@ -56,8 +57,8 @@ def register(request):
 @require_GET
 @ensure_csrf_cookie
 def csrf_token(request):
-    # Ensure Django sends a CSRF cookie to the browser.
-    return JsonResponse({"message": "CSRF cookie set."})
+    token = get_token(request)
+    return JsonResponse({"csrfToken": token})
 
 @require_POST
 def login_user(request):
