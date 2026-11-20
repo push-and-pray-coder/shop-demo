@@ -1,3 +1,8 @@
+# Running Instructions
+https://shop-demo-frontend.onrender.com/
+ 
+Wait for the Render backend to spin up
+
 # Project Name
 Shop Demo
 # Features
